@@ -2,8 +2,9 @@ import { StyleSheet } from 'react-native';
 export const StylesHomePage = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
+  },
+  image: {
+    flex: 1,
     justifyContent: 'center',
   },
 });
