@@ -6,6 +6,7 @@ import Header from './Components/Header';
 import Shop from './Components/Shop';
 import Entertain from './Components/Entertain';
 import Dine from './Components/Dine';
+import Offers from './Components/Offers';
 const Stack = createNativeStackNavigator<RootStackParamList>();
 
 export default function App() {
@@ -22,6 +23,7 @@ export default function App() {
         <Stack.Screen name="Shop" component={Shop}></Stack.Screen>
         <Stack.Screen name="Entertain" component={Entertain}></Stack.Screen>
         <Stack.Screen name="Dine" component={Dine}></Stack.Screen>
+        <Stack.Screen name="Offers" component={Offers}></Stack.Screen>
       </Stack.Navigator>
     </NavigationContainer>
   );
