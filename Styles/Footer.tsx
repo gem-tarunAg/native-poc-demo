@@ -20,7 +20,10 @@ footer: {
     alignItems: 'center',
     paddingVertical: 10,
     backgroundColor: 'transparent',
-    marginTop: 740
+    // marginTop: 260
+    position:'absolute',
+    bottom:0,
+    width:'100%'
   },
   button: {
     backgroundColor: 'transparent',
