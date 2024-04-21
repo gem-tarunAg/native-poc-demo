@@ -11,6 +11,12 @@ export const Styles = StyleSheet.create({
     color: 'white',
     fontWeight: '300',
     fontSize: 20
+  },
+  slidesContainer: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: 'skyblue',
+    alignItems: 'center'
   }
 });
 

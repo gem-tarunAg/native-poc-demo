@@ -8,4 +8,10 @@ export type RootStackParamList = {
   Notification: undefined;
   Profile: undefined;
   Setting: undefined;
+  Slide1: undefined;
+  Slide2: undefined;
+  Slide3: undefined;
+  Slide4: undefined;
+  Slide5: undefined;
+  Slide6: undefined;
 };

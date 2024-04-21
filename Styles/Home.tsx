@@ -23,6 +23,7 @@ export const StylesHomePage = StyleSheet.create({
   boldText: { fontSize: 25, fontWeight: 'bold', marginTop: 10, color: 'white' },
   container3: {
     alignItems: 'center',
+    marginTop: 400
   },
   text: {
     color: 'white',
@@ -33,7 +34,7 @@ export const StylesHomePage = StyleSheet.create({
     padding: 10,
     borderRadius: 5,
     borderColor: 'white',
-    marginTop: 20,
+    marginTop: 40,
     borderWidth: 1,
   },
   buttonText: {

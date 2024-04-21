@@ -5,16 +5,18 @@ import {
   ImageBackground,
   StatusBar,
   TouchableOpacity,
+  ScrollView
 } from 'react-native';
 import { StylesHomePage as styles } from '../../Styles/Home';
+import MyCarousel from '../Carousel/index';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 import { RootStackParamList } from '../../helpers/Screens';
 import Footer from '../Footer';
 
-const image = {
-  uri: 'https://img.freepik.com/free-photo/yong-readhead-bearded-hipster-with-backpack-holding-retro-camera-listening-music_171337-7893.jpg?t=st=1713423764~exp=1713427364~hmac=6500b47407173a0c5addadfd4c0c358e5dcda3e4864385c5e763a27c52f384c6&w=360',
-};
-
+// const image = {
+//   uri: 'https://img.freepik.com/free-photo/yong-readhead-bearded-hipster-with-backpack-holding-retro-camera-listening-music_171337-7893.jpg?t=st=1713423764~exp=1713427364~hmac=6500b47407173a0c5addadfd4c0c358e5dcda3e4864385c5e763a27c52f384c6&w=360',
+// };
+const image = require('../../assets/backgroundImage.png');
 type HomeProps = {
   navigation: NativeStackNavigationProp<RootStackParamList>;
 };
@@ -33,6 +35,7 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
         barStyle="light-content"
       />
       <ImageBackground source={image} resizeMode="cover" style={styles.image}>
+      <ScrollView showsVerticalScrollIndicator={false}>
         <View style={styles.container3}>
           <View style={styles.container2}>
             <Text style={styles.text2}>Bossini</Text>
@@ -44,6 +47,8 @@ const Home: React.FC<HomeProps> = ({ navigation }) => {
             <Text style={styles.buttonText}>View all offers →</Text>
           </TouchableOpacity>
         </View>
+        <MyCarousel navigation={navigation}></MyCarousel>
+        </ScrollView>
         <Footer></Footer>
       </ImageBackground>
     </View>
