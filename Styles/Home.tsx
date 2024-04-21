@@ -7,6 +7,7 @@ export const StylesHomePage = StyleSheet.create({
   image: {
     flex: 1,
     justifyContent: 'center',
+    zIndex: -1,
   },
   container2: {
     alignItems: 'center',

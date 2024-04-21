@@ -7,34 +7,34 @@ type HeaderProps = {
   navigation: NativeStackNavigationProp<RootStackParamList>;
 };
 
-const Header: React.FC<HeaderProps> = ({navigation}) => {
-  const onShopPress = () => {
-    console.log('Shop Pressed');
-    navigation.navigate('Shop');
-    
-  };
-  const onEntertainPress = () => {
-    console.log('Entertain Pressed');
-    navigation.navigate('Entertain');
-  };
-  const onDinePress = () => {
-    console.log('Dine Pressed');
-    navigation.navigate('Dine');
+const Header: React.FC<HeaderProps> = ({ navigation }) => {
+  const handleClick = (screenName: any) => {
+    console.log(`Clicked on ${screenName}`);
+    navigation.navigate(screenName);
   };
 
   return (
     <View style={styles.container}>
-      <TouchableOpacity style={styles.button} onPress={onShopPress}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleClick('Shop')}
+      >
         <Text style={styles.buttonText}>Shop</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={onEntertainPress}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleClick('Entertain')}
+      >
         <Text style={styles.buttonText}>Entertain</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={onDinePress}>
+      <TouchableOpacity
+        style={styles.button}
+        onPress={() => handleClick('Dine')}
+      >
         <Text style={styles.buttonText}>Dine</Text>
       </TouchableOpacity>
     </View>
   );
-}
+};
 
 export default Header;

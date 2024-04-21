@@ -7,5 +7,5 @@ export type RootStackParamList = {
   Search: undefined;
   Notification: undefined;
   Profile: undefined;
-  Setting: undefined;
+  Settings: undefined;
 };
